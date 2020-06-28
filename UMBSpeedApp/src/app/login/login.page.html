@@ -1,0 +1,45 @@
+<ion-content>
+  <img src="../../assets/header.png">
+
+  <div class="ion-padding">
+    <ion-card>
+      <ion-card-content>
+        <h2><ion-icon name="lock-closed"></ion-icon> Login</h2>
+
+        <form>
+          <ion-list>
+            <ion-item>
+              <ion-label color="warning" position="floating"><ion-icon name="person-outline"></ion-icon> ID</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label color="warning" position="floating"><ion-icon name="lock-closed-outline"></ion-icon> Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <div class="ion-text-end" style="margin: 20px 10px">
+            <a style="color: #ffc409" href="#">Forgotten Password?</a>
+          </div>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button color="dark" expand="full" (click)="submitLogin()">Submit</ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button color="danger" expand="full" routerDirection="root" routerLink="/home">Cancel</ion-button>
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    <h5 class="ion-text-center">OR</h5>
+    <h1 class="ion-text-center" style="font-size: 3em"><ion-icon name="finger-print-outline"></ion-icon></h1>
+    <p class="ion-text-center" >Place your finger on fingerprint sensor</p>
+  </div>
+</ion-content>
